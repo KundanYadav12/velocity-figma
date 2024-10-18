@@ -1,0 +1,420 @@
+ 
+/* ----------------------------------------- */
+      /* Start serum section */
+/* ----------------------------------------- */
+.serum-section {
+  position: relative;
+  padding: 20px;
+  height: 100vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.serum-heading {
+  z-index: 2;  
+  font-size: 9.5rem;
+  width: 100%;
+  position: relative;
+  top: -10%;  
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.serum-image {
+  position: absolute;
+  right: 0; 
+  top: 0;
+  z-index: 1;  
+  max-width: 50%;
+  height: 100%;
+  object-fit: cover;  
+}
+
+/* ----------------------------------------- */
+      /* End Serum section */
+/* ----------------------------------------- */
+
+/* ----------------------------------------- */
+      /* Start page 2 */
+/* ----------------------------------------- */
+
+.science-nature-section {
+  position: relative;
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.science-heading {
+  top: 10%; 
+  font-size: 9rem;
+  text-align: center;
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  gap:40px;
+}
+
+.image-1, .image-3 {
+  position: absolute;
+  height: auto;
+  z-index:10;
+
+}
+
+.image-1 {
+  margin-right: 400px;
+}
+
+.image-2 {
+  position:relative;
+  width: 70%;
+  height: auto;
+  z-index: 2; 
+}
+
+.image-3 {
+  transform: translateY(-50%);  
+  margin-left: 400px;
+  top:400px;
+}
+
+.science-description {
+  margin-top:400px;  
+  text-align: center;
+  font-size: 1.5rem;
+  color:gray;
+  width: 100%;
+}
+/* ----------------------------------------- */
+      /* End Page 2 */
+/* ----------------------------------------- */
+/* ----------------------------------------- */
+      /* Start page3  */
+/* ----------------------------------------- */
+
+.how-it-works-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.image-section {
+  width: 35%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.image-section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.image-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.image-section img {
+  width: 100%;
+  height: 80vh;
+}
+
+.steps-section {
+  width: 65%;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.step-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.step-row h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.step-description {
+  display: flex;
+  flex-direction: row;
+}
+
+.step-description h1 {
+  width:50%;
+  font-size: 3.8rem;
+  margin-bottom: 5px;
+}
+
+.step-description p {
+  width:50%;
+  font-size: 1.2rem;
+  margin: 0;
+}
+/* ----------------------------------------- */
+      /* End page3  */
+/* ----------------------------------------- */
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.footer-image {
+  width: 50%;  
+  height: auto;
+  height:90vh;
+}
+
+.footer-col{
+  display: flex;
+  flex-direction: column;
+  padding:40px;
+ 
+}
+
+.footer-call-to-action {
+  text-align: center;
+  flex: 1;
+  height:50%;
+   text-align: left;
+   margin-left:30px;
+   border-bottom: 1px solid black;
+}
+
+.footer-call-to-action h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+.footer-button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom:30px;
+}
+
+.footer-button:hover {
+  background-color: #333;
+}
+
+.footer-navigation {
+  flex: 1;
+  text-align: left;
+  height:50%;
+  margin-left:30px;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.footer-links-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-product-links ul,
+.footer-social-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-product-links li,
+.footer-social-links li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer-product-links li:hover,
+.footer-social-links li:hover {
+  text-decoration: underline;
+}
+
+
+/* ----------------------------------------- */
+      /* Mobile Styles for small devices (max-width: 450px) */
+/* ----------------------------------------- */
+@media (max-width: 450px) {
+
+  .science-nature-section {
+      height: auto;
+      padding: 10px;
+      flex-direction: column;
+  }
+
+  .science-heading {
+      margin-top:100px;
+      font-size: 2.5rem;
+  }
+
+  .image-1, .image-2, .image-3 {
+      width: 80%;  
+  }
+
+  .science-description {
+      font-size: 1rem;
+  }
+
+  
+   /* Science-Nature Section */
+   .science-heading {
+      font-size: 3.5rem;
+      text-align: center;
+  }
+
+  .image-container {
+      flex-direction: row;
+      gap: 10px;
+  }
+
+  .image-1, .image-2, .image-3 {
+      width: 10%;  
+      height: auto;
+      z-index: 1;
+  }
+
+  .image-1, .image-3 {
+       
+      margin: 0;
+      width: 30%;
+      position: absolute;
+      z-index: 2; 
+  }
+
+  .image-1{
+      margin-right:200px;
+  }
+
+  .image-3{
+      margin-left:200px;
+  }
+
+  .image-2 {
+      position:relative;
+      z-index: 1; 
+      width: 80%;
+  }
+
+  .science-description {
+      font-size: 1rem;
+      margin-top: 20px;
+      text-align: center;
+  }
+
+  /* Serum Section */
+  .serum-heading {
+      font-size: 3.5rem;
+      text-align: center;
+      top: 0;
+  }
+
+  .serum-section {
+      flex-direction: column;
+      height: auto;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .serum-image {
+      max-width: 100%;
+      height: auto;
+  }
+
+  /* How it Works Section */
+  .how-it-works-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .image-section, .steps-section {
+      width: 100%;
+  }
+
+  .steps-section .step-row {
+      align-items: center;
+  }
+
+  .step-description{
+      border-bottom: 2px solid;
+  padding-bottom: 20px;
+  }
+
+
+  .step-description h1 {
+      width: 50%;
+      font-size: 2rem;
+      margin-bottom: 5px;
+      padding-left:30px;
+  }
+
+  .step-description p {
+      width: 50%;
+      font-size: 1rem;
+      margin: 0;
+      margin-right: 30px;
+  }
+
+  /* Footer Section */
+  .footer-section {
+      flex-direction: column;
+      align-items: center;
+       
+  }
+
+  .footer-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .footer-call-to-action h1 {
+      font-size: 1.8rem;
+  }
+
+  .footer-button {
+      width: 100%;
+      font-size: 1rem;
+  }
+
+  .footer-col {
+      padding: 15px;
+  }
+
+  .footer-navigation {
+      text-align: center;
+  }
+}
+
+
+
+
